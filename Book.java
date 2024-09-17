@@ -33,16 +33,19 @@ class Book
         
         
     }
-    
+    // Add the methods here ...
+    //this satisfies the requirements of problem 2.83
      public String getAuthor(){
         return author;
      }
      public String getTitle(){
          return title;
      }
+     //this satisfies the requirements of problem 2.85
      public int getPages(){
          return pages;
      }
+     //this satisfies the requirements of problem 2.84
      public String printAuthor(){
          System.out.println( author );
          return author;
@@ -51,6 +54,7 @@ class Book
          System.out.println( title );
          return title;
      }
+     //this satisfies the requirements of problem 2.87,2.89
      public String printDetails(){
          System.out.println("Title: " + title+"," + " Author:" + author+"," + " Pages:" + pages);
          System.out.println("Number of times borrowed: "+ borrowed);
@@ -64,6 +68,7 @@ class Book
             }
          return details;
      }
+     //this satifies the requirements for problem 2.88, 2.90
      public void setRefNumber(String ref){
          if (refnumbers.length() > 3){
              ref = refnumbers;
@@ -72,18 +77,19 @@ class Book
          System.out.println("ERROR: REFERENCE NUMBER MUST CONTAIN ATLEAST 3 CHARACTERS");
          }
     }
-
     public String getRefNumber(){
           return refnumbers;
      }
+     //this satisfies the requirements for problem 2.91
     public void borrowed(){
          borrowed++;
      }
     public int getBorrowed(){
         return borrowed;
         }
+    //this satisifies teh requirements for problem 2.92
     public Boolean iscourseText(){
         return courseText;
     }
-    // Add the methods here ...
+    
 }
